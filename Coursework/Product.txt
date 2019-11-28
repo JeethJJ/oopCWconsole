@@ -1,0 +1,61 @@
+Vehicle 1.
+
+Vehicle type :Motorbike
+Vehicle plate number :w
+Vehicle  make :a
+Vehicle manufacture year :1999
+Vehicle kilometers per liter :2.0
+Vehicle CC:1
+Vehicle hybrid status :true
+Vehicle no of Helmets provided :1
+Vehicle no of stands installed :2
+Vehicle rate per day :2
+Vehicle 1.
+
+Vehicle type :Car
+Vehicle plate number :q
+Vehicle  make :q
+Vehicle manufacture year :1999
+Vehicle kilometers per liter :1.0
+Vehicle CC:1
+Vehicle hybrid status :true
+Vehicle no of doors :1
+Vehicle no of spare wheels :1
+Vehicle rate per day :1
+Vehicle 1.
+
+Vehicle type :Car
+Vehicle plate number :JJ
+Vehicle  make :j
+Vehicle manufacture year :1990
+Vehicle kilometers per liter :40.0
+Vehicle CC:23
+Vehicle hybrid status :true
+Vehicle no of doors :1
+Vehicle no of spare wheels :2
+Vehicle rate per day :234
+Vehicle 1.
+
+Vehicle type :Car
+Vehicle plate number :q
+Vehicle  make :q
+Vehicle manufacture year :1999
+Vehicle kilometers per liter :1.0
+Vehicle CC:1
+Vehicle hybrid status :true
+Vehicle no of doors :1
+Vehicle no of spare wheels :1
+Vehicle rate per day :1
+Vehicle 1.
+
+Vehicle type :Car
+Vehicle plate number :q
+Vehicle  make :q
+Vehicle manufacture year :1999
+Vehicle kilometers per liter :1.0
+Vehicle CC:1
+Vehicle hybrid status :true
+Vehicle no of doors :1
+Vehicle no of spare wheels :1
+Vehicle rate per day :12
+
