@@ -28,7 +28,8 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
         System.out.println("3.Print list of vehicles");
         System.out.println("4.Write text document");
         System.out.println("5.Edit details");
-        System.out.println("6.Exit");
+        System.out.println("6.Open GUI");
+        System.out.println("7.Exit");
     }
 
     @Override
@@ -388,5 +389,12 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
     @Override
     public int hashCode() {
         return Objects.hash(db);
+    }
+
+    static boolean isWindows(){return System.getProperty("os.name").toLowerCase().contains("win");}
+    static String npm = isWindows() ? "npm.cmd" : "npm";
+    static void openElectron() throws IOException {
+        File file= new File("VehicleRentalStore");
+        Process p= new ProcessBuilder(npm,"run","electron-build").directory(file).start();
     }
 }

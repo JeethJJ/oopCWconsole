@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92cb775d-b14a-4b0e-a2c1-efce8fdb8a2c" name="Default Changelist" comment="" />
+    <list default="true" id="92cb775d-b14a-4b0e-a2c1-efce8fdb8a2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock details.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stock details.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsoleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +31,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,7 +42,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1T8frDcTqxNG43bMFBajDNw5M43" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -34,6 +54,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/VehicleRentalStore/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,13 +78,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ConsoleApp">
     <configuration name="ConsoleApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConsoleApp" />
-      <module name="Coursework" />
+      <module name="oop-cw" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="E2E Tests (VehicleRentalStore)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/VehicleRentalStore/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/VehicleRentalStore/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/VehicleRentalStore/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -102,10 +146,25 @@
       <workItem from="1574417899787" duration="1000" />
       <workItem from="1574530296669" duration="2768000" />
       <workItem from="1574763002473" duration="3607000" />
+      <workItem from="1574919480666" duration="7003000" />
+      <workItem from="1574955465684" duration="2741000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

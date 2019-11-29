@@ -1,3 +1,7 @@
+import com.sun.org.apache.xalan.internal.xslt.Process;
+
+import java.io.IOException;
+
 public class ConsoleApp {
     public static void main(String[] args) {
 
@@ -9,10 +13,10 @@ public class ConsoleApp {
             westminsterRentalVehicleManager.showMenu();
             do {
                 option = Validator.intValidator(">");
-                if(option<1 || option>6){
+                if(option<1 || option>7){
                     System.out.println("Invalid selection");
                 }
-            }while (option<1 || option>6);
+            }while (option<1 || option>7);
 
             switch (option){
                 case 1:
@@ -30,9 +34,16 @@ public class ConsoleApp {
                 case 5:
                     westminsterRentalVehicleManager.edit();
                     break;
+                case 6:
+                    try {
+                        westminsterRentalVehicleManager.openElectron();
+                    } catch (IOException e) {
+                        System.out.println("Error occurred while trying to open GUI!!!");
+                    }
+                    break;
 
             }
-        }while (option!=6);
+        }while (option!=7);
 
     }
 
