@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cb775d-b14a-4b0e-a2c1-efce8fdb8a2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock details.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stock details.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleRentalStore" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app-routing.module.ts" afterDir="false" />
@@ -13,9 +12,7 @@
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ConsoleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsoleApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +145,7 @@
       <workItem from="1574763002473" duration="3607000" />
       <workItem from="1574919480666" duration="7003000" />
       <workItem from="1574955465684" duration="2741000" />
+      <workItem from="1575005280357" duration="9079000" />
     </task>
     <servers />
   </component>
