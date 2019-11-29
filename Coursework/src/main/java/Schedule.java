@@ -2,10 +2,10 @@ import java.time.LocalDate;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
-public class Schedule {
+public class Schedule {     //schedule class is created prior to the requests of the coursework, but gor the spring backend this is not suitable
     private LocalDate pickUpDate;
     private LocalDate dropOffDate;
-
+                                        //so a new scheduling class is created in the spring project
     public Schedule(LocalDate pickUpDate, LocalDate dropOffDate) {
         this.pickUpDate = pickUpDate;
         this.dropOffDate = dropOffDate;

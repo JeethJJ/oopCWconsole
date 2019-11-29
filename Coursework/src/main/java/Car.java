@@ -3,8 +3,8 @@ import dev.morphia.annotations.Entity;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-@Entity("Car")
-public final class Car extends Vehicle {
+@Entity("Car")      //create a car collection in mongo when a instance of this class is added to thr database
+public final class Car extends Vehicle {     //same structure of a blueprint class
     private int noOfDoors;
     private int noOfSpareWheels;
 

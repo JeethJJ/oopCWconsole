@@ -11,8 +11,17 @@
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsoleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Motorbike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RentalVehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +154,7 @@
       <workItem from="1574763002473" duration="3607000" />
       <workItem from="1574919480666" duration="7003000" />
       <workItem from="1574955465684" duration="2741000" />
-      <workItem from="1575005280357" duration="9079000" />
+      <workItem from="1575005280357" duration="12406000" />
     </task>
     <servers />
   </component>

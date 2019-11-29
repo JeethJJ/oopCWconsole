@@ -1,8 +1,8 @@
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public abstract class Vehicle implements Comparable<Vehicle>{
-    private String plateNumber;
+public abstract class Vehicle implements Comparable<Vehicle>{                //same structure of a blueprint class
+    private String plateNumber;                                             //super class of bike and car
     private String make;
     private BigDecimal ratePerDay;
     private int manufactureYear;

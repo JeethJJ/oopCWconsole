@@ -34,7 +34,7 @@ public class ConsoleApp {
                     break;
                 case 6:
                     try {
-                        westminsterRentalVehicleManager.openElectron();
+                        westminsterRentalVehicleManager.openElectron();              //the angular app to be opened with electron
                     } catch (IOException e) {
                         System.out.println("Error occurred while trying to open GUI!!!");
                     }

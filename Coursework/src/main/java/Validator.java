@@ -27,7 +27,7 @@ public class Validator {
         return userInputDouble;
     }
 
-    public static BigDecimal bigDecimalValidator(String question) {
+    public static BigDecimal bigDecimalValidator(String question) {   // to validate the big decimal input for rate
         System.out.print(question);
         Scanner sc = new Scanner(System.in);
         while (!sc.hasNextBigDecimal()) {

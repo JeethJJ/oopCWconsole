@@ -17,7 +17,7 @@ public class Database {
 
     public void saveVehicle(Vehicle vehicle) {
         rentalStore.save(vehicle);
-    }
+    }          //save will basically add the vehicle to the respective collection
 
     public void saveCar(Car car) {
         rentalStore.save(car);
@@ -42,7 +42,7 @@ public class Database {
 
         Query queryB;
 
-        if (vehicle instanceof Car) {
+        if (vehicle instanceof Car) {         //checking what object it is and deleting from the proper collection
             queryB = (Query<Car>) rentalStore.createQuery(Car.class).field("plateNumber").equal(vehicle.getPlateNumber());
         } else {
             queryB = (Query<Motorbike>) rentalStore.createQuery(Motorbike.class).field("plateNumber").equal(vehicle.getPlateNumber());

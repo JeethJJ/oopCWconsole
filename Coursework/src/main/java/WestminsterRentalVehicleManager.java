@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.List;
 
 
-public class WestminsterRentalVehicleManager implements RentalVehicleManager{
+public class WestminsterRentalVehicleManager implements RentalVehicleManager{     //all accesses of the manager
     private static final int MAX_SIZE=50;
     public static List<Vehicle> vehicleLot = new ArrayList<>();        // list of all items
     Database db=new Database();
@@ -20,7 +20,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
     }
 
     @Override
-    public void showMenu(){
+    public void showMenu(){           //prints all the accesses the manager has to the system
         System.out.println("Welcome to Westminster Rent a Vehicle\n");
         System.out.println("select your purpose");
         System.out.println("1.Add vehicle");
@@ -222,9 +222,9 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
         try {
             fw = new FileWriter(file, true);           //append status is true
             pw= new PrintWriter(fw,true);             //auto flush status is true
-            pw.println(LocalDateTime.now());
+            pw.println(LocalDateTime.now());            // current date and time to keep track when these data were added
             int counter =1;
-            for(Vehicle v : vehicleLot){
+            for(Vehicle v : vehicleLot){                       // create a loop and through the loop you can iterate through and print them to the file
                 pw.println("Vehicle "+counter +".\n");
                 pw.println("Vehicle type :"+v.getClass().toString().split(" ")[1]);
                 pw.println("Vehicle plate number :"+v.getPlateNumber());
@@ -245,7 +245,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
             }
             pw.println();
 
-            Desktop.getDesktop().open(file);
+            Desktop.getDesktop().open(file);          //auto open the text file which has all the written data
         }catch (IOException e){
             System.err.println("Error" + e.getMessage());
         }finally {                          //after executing closing all the files
@@ -263,7 +263,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
 
     @Override
     public void edit() {
-        System.out.print("Enter the vehicle plate number you want to edit :");
+        System.out.print("Enter the vehicle plate number you want to edit :");   // user cannot edit all the vehicles, he cah change only certain attributes
         Scanner sc = new Scanner(System.in);
         String editPlateNo = sc.nextLine();
         int count=1;
@@ -314,7 +314,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
                             ((Car) v).setNoOfSpareWheels(noOfSpareWheels);
                             break;
                     }
-                    db.saveCar((Car) v);
+                    db.saveCar((Car) v);          // update the edited stuff in the database
                     break outer;
                 }else if (v.getClass().toString().split(" ")[1].equals("Motorbike")){
                     int editOption2;
@@ -378,23 +378,11 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{
         }
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        WestminsterRentalVehicleManager that = (WestminsterRentalVehicleManager) o;
-        return Objects.equals(db, that.db);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(db);
-    }
 
     static boolean isWindows(){return System.getProperty("os.name").toLowerCase().contains("win");}
     static String npm = isWindows() ? "npm.cmd" : "npm";
-    static void openElectron() throws IOException {
-        File file= new File("VehicleRentalStore");
+    static void openElectron() throws IOException {                 //this is the method to open the electron application
+        File file= new File("VehicleRentalStore");       //basically this will execute this command inside that directory
         Process p= new ProcessBuilder(npm,"run","electron-build").directory(file).start();
     }
 }
