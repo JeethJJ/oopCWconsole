@@ -1,5 +1,4 @@
 import dev.morphia.annotations.Entity;
-
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -14,7 +13,8 @@ public final class Motorbike extends Vehicle {           //same structure of a b
         setNoOfStands(noOfStands);
     }
 
-    public Motorbike(){}
+    public Motorbike() {
+    }
 
     public int getNoOfStands() {
         return noOfStands;
@@ -34,7 +34,7 @@ public final class Motorbike extends Vehicle {           //same structure of a b
 
     @Override
     public String toString() {
-        return super.toString()+"Motorbike{" +
+        return super.toString() + "Motorbike{" +
                 "noOfStands=" + noOfStands +
                 ", noOfHelmets=" + noOfHelmets +
                 '}';

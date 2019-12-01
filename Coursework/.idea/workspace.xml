@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cb775d-b14a-4b0e-a2c1-efce8fdb8a2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BikeTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CarTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ValidatorTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WestminsterManagerTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/package-lock.json" afterDir="false" />
@@ -11,16 +17,20 @@
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleRentalStore/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Motorbike.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RentalVehicleManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WestminsterRentalVehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsoleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Motorbike.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Motorbike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RentalVehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RentalVehicleManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WestminsterRentalVehicleManager.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,6 +78,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
@@ -84,10 +97,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConsoleApp">
+  <component name="RunManager" selected="JUnit.ValidatorTesting">
     <configuration name="ConsoleApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConsoleApp" />
       <module name="oop-cw" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BikeTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-cw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BikeTesting" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-cw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CarTesting" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-cw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DatabaseTesting" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-cw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidatorTesting" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,6 +163,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ValidatorTesting" />
+        <item itemvalue="JUnit.DatabaseTesting" />
+        <item itemvalue="JUnit.BikeTesting" />
+        <item itemvalue="JUnit.CarTesting" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -155,6 +212,7 @@
       <workItem from="1574919480666" duration="7003000" />
       <workItem from="1574955465684" duration="2741000" />
       <workItem from="1575005280357" duration="12406000" />
+      <workItem from="1575095478319" duration="21939000" />
     </task>
     <servers />
   </component>

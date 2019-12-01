@@ -1,4 +1,3 @@
-
 public class Customer {         //this is an additional thing i created to store customer details , for now not implemented
     private int customerId;
     private String customerName;

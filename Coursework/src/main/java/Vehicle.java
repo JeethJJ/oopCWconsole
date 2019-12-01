@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public abstract class Vehicle implements Comparable<Vehicle>{                //same structure of a blueprint class
+public abstract class Vehicle implements Comparable<Vehicle> {                //same structure of a blueprint class
     private String plateNumber;                                             //super class of bike and car
     private String make;
     private BigDecimal ratePerDay;
@@ -10,7 +10,7 @@ public abstract class Vehicle implements Comparable<Vehicle>{                //s
     private boolean hybrid;
     private int engineCC;
 
-    public Vehicle(String plateNumber, String make, BigDecimal ratePerDay, int manufactureYear, double kmPerLiter, boolean hybrid, int engineCC){
+    public Vehicle(String plateNumber, String make, BigDecimal ratePerDay, int manufactureYear, double kmPerLiter, boolean hybrid, int engineCC) {
         super();
         setEngineCC(engineCC);
         setHybrid(hybrid);

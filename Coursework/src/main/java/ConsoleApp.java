@@ -2,21 +2,19 @@ import java.io.IOException;
 
 public class ConsoleApp {
     public static void main(String[] args) {
-
-
-        WestminsterRentalVehicleManager westminsterRentalVehicleManager=new WestminsterRentalVehicleManager();      // creating object of westminster
+        WestminsterRentalVehicleManager westminsterRentalVehicleManager = new WestminsterRentalVehicleManager();      // creating object of westminster
 
         int option;
-        do{                                      //iterate till user exit
+        do {                                      //iterate till user exit
             westminsterRentalVehicleManager.showMenu();
             do {
                 option = Validator.intValidator(">");
-                if(option<1 || option>7){
+                if (option < 1 || option > 7) {
                     System.out.println("Invalid selection");
                 }
-            }while (option<1 || option>7);
+            } while (option < 1 || option > 7);
 
-            switch (option){
+            switch (option) {
                 case 1:
                     westminsterRentalVehicleManager.addVehicle();
                     break;
@@ -39,9 +37,8 @@ public class ConsoleApp {
                         System.out.println("Error occurred while trying to open GUI!!!");
                     }
                     break;
-
             }
-        }while (option!=7);
+        } while (option != 7);
 
     }
 

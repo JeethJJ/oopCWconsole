@@ -8,13 +8,14 @@ public final class Car extends Vehicle {     //same structure of a blueprint cla
     private int noOfDoors;
     private int noOfSpareWheels;
 
-    public Car(String plateNumber, String make, BigDecimal ratePerDay, int manufactureYear, double kmPerLiter, boolean hybrid, int engineCC, int noOfDoors, int noOfSpareWheels){
+    public Car(String plateNumber, String make, BigDecimal ratePerDay, int manufactureYear, double kmPerLiter, boolean hybrid, int engineCC, int noOfDoors, int noOfSpareWheels) {
         super(plateNumber, make, ratePerDay, manufactureYear, kmPerLiter, hybrid, engineCC);
         setNoOfDoors(noOfDoors);
         setNoOfSpareWheels(noOfSpareWheels);
     }
 
-    public Car(){}
+    public Car() {
+    }
 
     public int getNoOfDoors() {
         return noOfDoors;
@@ -34,7 +35,7 @@ public final class Car extends Vehicle {     //same structure of a blueprint cla
 
     @Override
     public String toString() {
-        return super.toString()+"Car{" +
+        return super.toString() + "Car{" +
                 "noOfDoors=" + noOfDoors +
                 ", noOfSpareWheels=" + noOfSpareWheels +
                 '}';

@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public interface RentalVehicleManager {   // this is the interface, basically all the methods here will be the accesses the manager has
     void showMenu();
     void addVehicle();
@@ -5,4 +7,5 @@ public interface RentalVehicleManager {   // this is the interface, basically al
     void printVehicle();
     void writeStockDetails();
     void edit();
+    void openElectron() throws IOException;
 }

@@ -9,18 +9,18 @@ import java.util.*;
 import java.util.List;
 
 
-public class WestminsterRentalVehicleManager implements RentalVehicleManager{     //all accesses of the manager
-    private static final int MAX_SIZE=50;
+public class WestminsterRentalVehicleManager implements RentalVehicleManager {     //all accesses of the manager
+    private static final int MAX_SIZE = 50;
     public static List<Vehicle> vehicleLot = new ArrayList<>();        // list of all items
-    Database db=new Database();
-    public WestminsterRentalVehicleManager(){
+    Database db = new Database();
+
+    public WestminsterRentalVehicleManager() {
         vehicleLot.addAll(db.getBike());
         vehicleLot.addAll(db.getCar());                                 //adding all items from database to the list
-
     }
 
     @Override
-    public void showMenu(){           //prints all the accesses the manager has to the system
+    public void showMenu() {           //prints all the accesses the manager has to the system
         System.out.println("Welcome to Westminster Rent a Vehicle\n");
         System.out.println("select your purpose");
         System.out.println("1.Add vehicle");
@@ -33,8 +33,8 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
     }
 
     @Override
-    public void addVehicle(){                             // adding new objects
-        if(vehicleLot.size()<MAX_SIZE) {            // add vehicle only is space available
+    public void addVehicle() {                             // adding new objects
+        if (vehicleLot.size() < MAX_SIZE) {            // add vehicle only is space available
             Scanner sc = new Scanner(System.in);
             int vehicleType;
             do {
@@ -151,7 +151,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
                 System.out.println("Done!!\n\n");
                 db.saveVehicle(motorBike);     //adding object to database
             }
-        }else{
+        } else {
             System.out.println("There are 50 vehicles already added. You can't add more...");
         }
     }
@@ -163,26 +163,26 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
         String deleteVehicle = sc.nextLine();
 
         int finder = 0;
-        for (Vehicle v2: vehicleLot) {
-            if(deleteVehicle.equals(v2.getPlateNumber().toString())){
+        for (Vehicle v2 : vehicleLot) {
+            if (deleteVehicle.equals(v2.getPlateNumber().toString())) {
                 System.out.println(v2);
-                finder=1;
+                finder = 1;
                 break;
             }
         }
-        if(finder==0){
+        if (finder == 0) {
             System.out.println("Vehicle not found in the database\n\n");
-        }else if(finder==1){
+        } else if (finder == 1) {
             int deleteYN;
             do {
                 deleteYN = Validator.intValidator("Confirm deletion\n1.Yes\n2.No\n>");
-                if(deleteYN!=1 && deleteYN!=2){
+                if (deleteYN != 1 && deleteYN != 2) {
                     System.out.println("Invalid Input");
                 }
-            }while (deleteYN!=1 && deleteYN!=2);
-            if(deleteYN==1){
-                for (Vehicle v2: vehicleLot) {
-                    if(deleteVehicle.equals(v2.getPlateNumber().toString())){
+            } while (deleteYN != 1 && deleteYN != 2);
+            if (deleteYN == 1) {
+                for (Vehicle v2 : vehicleLot) {
+                    if (deleteVehicle.equals(v2.getPlateNumber().toString())) {
                         db.deleteFromDb(v2);
                         vehicleLot.remove(v2);
                         break;
@@ -190,7 +190,7 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
                 }
 
                 System.out.println("Deleted successfully!!\n\n");
-            }else {
+            } else {
                 System.out.println("Deletion cancelled!!\n\n");
             }
         }
@@ -207,52 +207,52 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
         System.out.println("|--------------|--------------|");
         System.out.format("%1s%15s%15s%n", "|", "Plate No|", "Vehicle Type|");
         System.out.println("|--------------|--------------|");
-        for (Vehicle v2: sortedList) {
+        for (Vehicle v2 : sortedList) {
             String type = v2.getClass().toString().split(" ")[1];
             String number = v2.getPlateNumber().toString();
-            System.out.format("%1s%15s%15s%n", "|",number+"|", type+"|");
+            System.out.format("%1s%15s%15s%n", "|", number + "|", type + "|");
         }
     }
 
     @Override
     public void writeStockDetails() {                          // Writing all stock details in text file
-        File file=new File("Stock details.txt");        //file
-        FileWriter fw=null;
-        PrintWriter pw=null;
+        File file = new File("Stock details.txt");        //file
+        FileWriter fw = null;
+        PrintWriter pw = null;
         try {
             fw = new FileWriter(file, true);           //append status is true
-            pw= new PrintWriter(fw,true);             //auto flush status is true
+            pw = new PrintWriter(fw, true);             //auto flush status is true
             pw.println(LocalDateTime.now());            // current date and time to keep track when these data were added
-            int counter =1;
-            for(Vehicle v : vehicleLot){                       // create a loop and through the loop you can iterate through and print them to the file
-                pw.println("Vehicle "+counter +".\n");
-                pw.println("Vehicle type :"+v.getClass().toString().split(" ")[1]);
-                pw.println("Vehicle plate number :"+v.getPlateNumber());
-                pw.println("Vehicle  make :"+v.getMake());
-                pw.println("Vehicle manufacture year :"+v.getManufactureYear());
-                pw.println("Vehicle kilometers per liter :"+v.getKmPerLiter());
-                pw.println("Vehicle CC:"+v.getEngineCC());
-                pw.println("Vehicle hybrid status :"+v.isHybrid());
-                if(v.getClass().toString().split(" ")[1].equals("Car")){
-                    pw.println("Vehicle no of doors :"+((Car)v).getNoOfDoors());
-                    pw.println("Vehicle no of spare wheels :"+((Car)v).getNoOfSpareWheels());
-                }else{
-                    pw.println("Vehicle no of Helmets provided :"+((Motorbike)v).getNoOfHelmets());
-                    pw.println("Vehicle no of stands installed :"+((Motorbike)v).getNoOfStands());
+            int counter = 1;
+            for (Vehicle v : vehicleLot) {                       // create a loop and through the loop you can iterate through and print them to the file
+                pw.println("Vehicle " + counter + ".\n");
+                pw.println("Vehicle type :" + v.getClass().toString().split(" ")[1]);
+                pw.println("Vehicle plate number :" + v.getPlateNumber());
+                pw.println("Vehicle  make :" + v.getMake());
+                pw.println("Vehicle manufacture year :" + v.getManufactureYear());
+                pw.println("Vehicle kilometers per liter :" + v.getKmPerLiter());
+                pw.println("Vehicle CC:" + v.getEngineCC());
+                pw.println("Vehicle hybrid status :" + v.isHybrid());
+                if (v.getClass().toString().split(" ")[1].equals("Car")) {
+                    pw.println("Vehicle no of doors :" + ((Car) v).getNoOfDoors());
+                    pw.println("Vehicle no of spare wheels :" + ((Car) v).getNoOfSpareWheels());
+                } else {
+                    pw.println("Vehicle no of Helmets provided :" + ((Motorbike) v).getNoOfHelmets());
+                    pw.println("Vehicle no of stands installed :" + ((Motorbike) v).getNoOfStands());
                 }
-                pw.println("Vehicle rate per day :"+v.getRatePerDay()+" LKR\n\n");
+                pw.println("Vehicle rate per day :" + v.getRatePerDay() + " LKR\n\n");
                 counter++;
             }
             pw.println();
 
             Desktop.getDesktop().open(file);          //auto open the text file which has all the written data
-        }catch (IOException e){
+        } catch (IOException e) {
             System.err.println("Error" + e.getMessage());
-        }finally {                          //after executing closing all the files
+        } finally {                          //after executing closing all the files
             try {
                 fw.close();
                 pw.close();
-            }catch (IOException e){
+            } catch (IOException e) {
                 System.err.println("Error" + e.getMessage());
 
             }
@@ -266,30 +266,30 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
         System.out.print("Enter the vehicle plate number you want to edit :");   // user cannot edit all the vehicles, he cah change only certain attributes
         Scanner sc = new Scanner(System.in);
         String editPlateNo = sc.nextLine();
-        int count=1;
+        int count = 1;
         outer:
-        for (Vehicle v: vehicleLot) {
-            if(editPlateNo.equals(v.getPlateNumber())){
+        for (Vehicle v : vehicleLot) {
+            if (editPlateNo.equals(v.getPlateNumber())) {
                 db.deleteFromDb(v);
                 System.out.println("ONLY CERTAIN ATTRIBUTES CAN BE CHANGED!!!");
                 System.out.println("What details would you like to edit:");
-                if(v.getClass().toString().split(" ")[1].equals("Car")){
+                if (v.getClass().toString().split(" ")[1].equals("Car")) {
                     int editOption;
                     do {
                         editOption = Validator.intValidator("1.Rate per day \n2.Km per liter\n3.Number of spare wheel\n>");
-                        if(editOption<1 || editOption>3){
+                        if (editOption < 1 || editOption > 3) {
                             System.out.println("Invalid Input");
                         }
-                    }while (editOption<1 || editOption>3);
-                    switch(editOption){
+                    } while (editOption < 1 || editOption > 3);
+                    switch (editOption) {
                         case 1:
                             BigDecimal ratePerDay;
                             do {
                                 ratePerDay = Validator.bigDecimalValidator("Enter rate per day :");
-                                if(ratePerDay.compareTo(BigDecimal.ZERO) < 0){
+                                if (ratePerDay.compareTo(BigDecimal.ZERO) < 0) {
                                     System.out.println("Invalid Amount!!");
                                 }
-                            }while (ratePerDay.compareTo(BigDecimal.ZERO) < 0);
+                            } while (ratePerDay.compareTo(BigDecimal.ZERO) < 0);
                             v.setRatePerDay(ratePerDay);
 
                             break;
@@ -297,43 +297,43 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
                             double kmPerLiter;
                             do {
                                 kmPerLiter = Validator.doubleValidator("Enter kilometers per liter :");
-                                if(kmPerLiter<0.0){
+                                if (kmPerLiter < 0.0) {
                                     System.out.println("Invalid Input");
                                 }
-                            }while (kmPerLiter<0.0);
+                            } while (kmPerLiter < 0.0);
                             v.setKmPerLiter(kmPerLiter);
                             break;
                         case 3:
                             int noOfSpareWheels;
                             do {
                                 noOfSpareWheels = Validator.intValidator("Enter no of spare wheels :");
-                                if(noOfSpareWheels<0){
+                                if (noOfSpareWheels < 0) {
                                     System.out.println("Invalid Input");
                                 }
-                            }while (noOfSpareWheels<0);
+                            } while (noOfSpareWheels < 0);
                             ((Car) v).setNoOfSpareWheels(noOfSpareWheels);
                             break;
                     }
                     db.saveCar((Car) v);          // update the edited stuff in the database
                     break outer;
-                }else if (v.getClass().toString().split(" ")[1].equals("Motorbike")){
+                } else if (v.getClass().toString().split(" ")[1].equals("Motorbike")) {
                     int editOption2;
                     do {
                         editOption2 = Validator.intValidator("1.Rate per day \n2.Km per liter\n3.Number of stands installed\n4.No of helmets provided\n>");
-                        if(editOption2<1 || editOption2>4){
+                        if (editOption2 < 1 || editOption2 > 4) {
                             System.out.println("Invalid Input");
                         }
-                    }while (editOption2<1 || editOption2>4);
+                    } while (editOption2 < 1 || editOption2 > 4);
 
-                    switch(editOption2){
+                    switch (editOption2) {
                         case 1:
                             BigDecimal ratePerDay;
                             do {
                                 ratePerDay = Validator.bigDecimalValidator("Enter rate per day :");
-                                if(ratePerDay.compareTo(BigDecimal.ZERO) < 0){
+                                if (ratePerDay.compareTo(BigDecimal.ZERO) < 0) {
                                     System.out.println("Invalid Amount!!");
                                 }
-                            }while (ratePerDay.compareTo(BigDecimal.ZERO) < 0);
+                            } while (ratePerDay.compareTo(BigDecimal.ZERO) < 0);
                             v.setRatePerDay(ratePerDay);
 
                             break;
@@ -341,48 +341,52 @@ public class WestminsterRentalVehicleManager implements RentalVehicleManager{   
                             double kmPerLiter;
                             do {
                                 kmPerLiter = Validator.doubleValidator("Enter kilometers per liter :");
-                                if(kmPerLiter<0.0){
+                                if (kmPerLiter < 0.0) {
                                     System.out.println("Invalid Input");
                                 }
-                            }while (kmPerLiter<0.0);
+                            } while (kmPerLiter < 0.0);
                             v.setKmPerLiter(kmPerLiter);
                             break;
                         case 3:
                             int noOfStands;
                             do {
                                 noOfStands = Validator.intValidator("Enter no of stands installed in the bike :");
-                                if(noOfStands<0){
+                                if (noOfStands < 0) {
                                     System.out.println("Invalid Input");
                                 }
-                            }while (noOfStands<0);
-                            ((Motorbike)v).setNoOfStands(noOfStands);
+                            } while (noOfStands < 0);
+                            ((Motorbike) v).setNoOfStands(noOfStands);
                             break;
                         case 4:
                             int noOfHelmets;
                             do {
                                 noOfHelmets = Validator.intValidator("Enter no of helmets :");
-                                if(noOfHelmets<0){
+                                if (noOfHelmets < 0) {
                                     System.out.println("Invalid Input");
                                 }
-                            }while (noOfHelmets<0);
-                            ((Motorbike)v).setNoOfHelmets(noOfHelmets);
+                            } while (noOfHelmets < 0);
+                            ((Motorbike) v).setNoOfHelmets(noOfHelmets);
                             break;
                     }
                     db.saveBike((Motorbike) v);
                     break outer;
                 }
-            }else if(count==vehicleLot.size()){
+            } else if (count == vehicleLot.size()) {
                 System.out.println("The plate number that you entered cannot be found.\n");
             }
             count++;
         }
     }
 
+    boolean isWindows() {
+        return System.getProperty("os.name").toLowerCase().contains("win");
+    }
 
-    static boolean isWindows(){return System.getProperty("os.name").toLowerCase().contains("win");}
-    static String npm = isWindows() ? "npm.cmd" : "npm";
-    static void openElectron() throws IOException {                 //this is the method to open the electron application
-        File file= new File("VehicleRentalStore");       //basically this will execute this command inside that directory
-        Process p= new ProcessBuilder(npm,"run","electron-build").directory(file).start();
+    String npm = isWindows() ? "npm.cmd" : "npm";
+
+    @Override
+    public void openElectron() throws IOException {                 //this is the method to open the electron application
+        File file = new File("VehicleRentalStore");       //basically this will execute this command inside that directory
+        Process p = new ProcessBuilder(npm, "run", "electron-build").directory(file).start();
     }
 }
